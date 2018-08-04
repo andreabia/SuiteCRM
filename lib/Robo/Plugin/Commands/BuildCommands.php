@@ -59,6 +59,7 @@ class BuildCommands extends \Robo\Tasks
     {
         $this->say('Compile SuiteP Theme (SASS)');
         if (empty($this->opts['color_scheme'])) {
+            $this->buildSuitePColorScheme('Abc');
             $this->buildSuitePColorScheme('Dawn');
             $this->buildSuitePColorScheme('Day');
             $this->buildSuitePColorScheme('Dusk');

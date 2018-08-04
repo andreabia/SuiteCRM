@@ -72,6 +72,7 @@ if(!empty($app_strings['LBL_SUBTHEMES'])) {
     // if statement removes the php notice
     $themedef['config_options']['sub_themes']['options'] = array(
         $app_strings['LBL_SUBTHEMES'] => array(
+            'Abc'  => $app_strings['LBL_SUBTHEME_OPTIONS_ABC'],
             'Dawn'  => $app_strings['LBL_SUBTHEME_OPTIONS_DAWN'],
             'Day'   => $app_strings['LBL_SUBTHEME_OPTIONS_DAY'],
             'Dusk'  => $app_strings['LBL_SUBTHEME_OPTIONS_DUSK'],

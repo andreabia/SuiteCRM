@@ -139,7 +139,11 @@ $footer = templateParser::parse_template($footer, $object_arr);
 $printable = str_replace("\n", "<br />", $converted);
 
 if ($task == 'pdf' || $task == 'emailpdf') {
-    $file_name = $mod_strings['LBL_PDF_NAME'] . "_" . str_replace(" ", "_", $bean->name) . ".pdf";
+    if ($bean->module_dir=="Cases") { 
+		$file_name = $mod_strings['LBL_PDF_NAME']."_".$bean->case_number."_".str_replace(" ","_",$bean->name)."_".substr($bean->date_entered, 6, 4).substr($bean->date_entered, 0, 2).substr($bean->date_entered, 3, 2).".pdf";
+	} else {			
+		$file_name = $mod_strings['LBL_PDF_NAME'] . "_" . str_replace(" ", "_", $bean->name) . ".pdf"; 	// original naming scheme			
+    }	
 
     ob_clean();
     try {

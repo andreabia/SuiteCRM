@@ -164,6 +164,7 @@ $mod_strings = array(
     'LBL_LAST_NAME' => 'Last Name',
     'LBL_LAYOUT_OPTIONS' => 'Layout Options',
     'LBL_SUBTHEMES' => 'Style',
+    'LBL_SUBTHEME_OPTIONS_ABC' => 'Abc',
     'LBL_SUBTHEME_OPTIONS_DAWN' => 'Dawn',
     'LBL_SUBTHEME_OPTIONS_DAY' => 'Day',
     'LBL_SUBTHEME_OPTIONS_DUSK' => 'Dusk',
